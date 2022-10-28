@@ -1,0 +1,291 @@
+/* Header */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    z-index: 99;
+    background: transparent;
+    transition: 2s;
+}
+header ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+header ul li a {
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 40px;
+    font-size: 1.5rem;
+    transition: ease-out 0.5s;
+}
+header ul li a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 1px;
+    background-color: red;
+    transition: all ease 0.5s;
+}
+header ul li a:hover {
+    color: red;
+}
+header ul li a:hover::before {
+    width: 100%;
+}
+
+section {
+    padding: 60px 0;
+    height: 100%;
+    position: relative;
+}
+
+/* Home Section */
+/* .home {
+    color: #ffffff;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: url(../img/img-main.png) no-repeat;
+    background-size: cover;
+    background-color: #141414;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    z-index: 9;
+    left: 130px;
+} */
+.home {
+    color: #000;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #141414;
+    opacity: 0.9;
+    height: 100vh;
+    z-index: 9;
+    overflow: hidden;
+}
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url(../img/img2.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    z-index: 10;
+}
+.name {
+    position: absolute;
+    bottom: 5%;
+    z-index: 15;
+}
+.home h1 {
+    font-size: 68px;
+    text-transform: uppercase;
+    text-shadow: 0 15px 20px #000000b0;
+    margin-bottom: 0;
+    z-index: 10;
+    letter-spacing: 5px;
+    font-weight: 500;
+    color: red;
+    transition: ease-in-out 0.5s;
+}
+.home h5 {
+    font-size: 30px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    color: #fff;
+    background-color: rgba(76, 76, 76, 0.5);
+}
+
+/* Section Title */
+.section-title {
+    text-align: center;
+}
+.section-title h2 {
+    display: inline-block;
+    font-size: 28px;
+    border-bottom: 1px solid;
+    text-transform: uppercase;
+    padding: 0 0 10px;
+}
+
+/* About Section */
+.about-info {
+    width: 60%;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+    z-index: 99;
+}
+.about-info p {
+    line-height: 28px;
+    font-size: 18px;
+}
+.about-info .downloadBtn {
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: #ffffff10;
+    border: 1px solid #ffffff30;
+    border-radius: 50px;
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 35px;
+    position: relative;
+    z-index: 999;
+    transition: 0.5s;
+}
+.about-info .downloadBtn:hover {
+    border: 1px solid red;
+    color: red;
+}
+
+.timeline {
+    margin-top: 50px;
+    display: flex;
+}
+.timeline .col {
+    margin: 5px;
+    padding: 25px 5px;
+    border: 1px solid #ffffff30;
+    float: left;
+}
+.timeline h6 {
+    margin: 15px 0 0;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+/* Service Section */
+.service {
+    width: 60%;
+    margin: 0 auto;
+    padding: 50px 0;
+    text-align: center;
+    z-index: 99;
+}
+.service .service-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+.service .col {
+    width: 40%;
+    margin: 25px 30px;
+    text-align: center;
+}
+.service .col i {
+    font-size: 48px;
+}
+.service .col h3 {
+    margin-top: 10px;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+.service .col p {
+    line-height: 28px;
+}
+
+/* Gallery Section */
+.gallery {
+    width: 60%;
+    margin: 0 auto;
+    padding: 50px 0;
+    z-index: 99;
+}
+.gallery-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0;
+}
+.gallery-info .col {
+    float: left;
+    width: 30%;
+    height: 160px;
+    margin: 1%;
+    filter: grayscale(100%);
+    z-index: 10;
+    transition: 1s ease-out;
+}
+.gallery-info .col:hover {
+    filter: none;
+}
+.gallery-info .col img {
+    min-width: 100%;
+    max-height: 100%;
+}
+
+/* Contact Section */
+.contact {
+    width: 60%;
+    margin: 0 auto;
+    padding: 50px 0;
+    z-index: 99;
+}
+.contact-info {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+.contact-info .textField {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    background-color: transparent;
+    padding: 15px 15px;
+    margin-bottom: 15px;
+    font-family: 'PT Sans Narrow',sans-serif;
+    color: #fff;
+    font-size: 16px;
+}
+.contact-info .messageField {
+    height: 200px;
+}
+.contact-info .submitButton {
+    background-color: #fff;
+    color: #000;
+    height: 50px;
+    font-weight: 600;
+    font-style: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.contact-info .submitButton:hover {
+    background-color: rgba(255, 255, 255, 0.808);
+    border: 1px solid red;
+    color: red;
+}
+
+/* Header Sticky Style */
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    z-index: 999;
+}
+/* Particles - js (крупинки) */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}

@@ -1,0 +1,31 @@
+Wow.js - animation on scrolling
+
+https://wowjs.uk/ 
+
+В head підключаємо "animate css":
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+В body:
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+B js файлі:
+
+new WOW().init();
+
+
+
+!!! Додаємо анімовані ефекти - крупинки (particle)
+
+Для цього використаємо jQuery плагін - particles.js :
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+
+Далі з github репозиторію в окремий js файл копіюємо вміст particles.json 
+(https://github.com/VincentGarreau/particles.js/):
+
+
+
+
+
+
